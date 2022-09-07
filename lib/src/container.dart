@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:slide_drawer/src/alignment.dart';
-import 'package:slide_drawer/src/item.dart';
-
-import 'drawer.dart';
+import 'package:slide_drawer/slide_drawer.dart';
 
 class SlideDrawerContainer extends StatelessWidget {
   final Widget? drawer;
   final Widget? head;
   final Widget? content;
-  final List<MenuItem> items;
+  final List<SliderItem> items;
   final double paddingRight;
 
   /// The gradient to use for the background.
@@ -87,7 +84,7 @@ class SlideDrawerContainer extends StatelessWidget {
                           child: content,
                         ),
                       if (!_hasContent && _hasItems)
-                        for (MenuItem item in items)
+                        for (SliderItem item in items)
                           Container(
                             margin: EdgeInsets.only(right: paddingRight),
                             child: MenuItemWidget(item: item),
@@ -102,7 +99,7 @@ class SlideDrawerContainer extends StatelessWidget {
 }
 
 class MenuItemWidget extends StatelessWidget {
-  final MenuItem item;
+  final SliderItem item;
 
   MenuItemWidget({Key? key, required this.item}) : super(key: key);
 

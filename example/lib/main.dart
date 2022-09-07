@@ -32,45 +32,45 @@ class _AppState extends State<App> {
   bool get _isHeadContent => type == SlideDrawerExampleType.HEAD_CONTENT_DRAWER;
   bool get _isFullDrawer => type == SlideDrawerExampleType.FULL_DRAWER;
 
-  List<MenuItem> get _items => [
-        MenuItem('Basic',
+  List<SliderItem> get _items => [
+        SliderItem('Basic',
             onTap: () => _changeType(SlideDrawerExampleType.BASIC)),
-        MenuItem('Custom Background',
+        SliderItem('Custom Background',
             onTap: () => _changeType(SlideDrawerExampleType.BACKGROUND)),
-        MenuItem('Custom Gradient',
+        SliderItem('Custom Gradient',
             onTap: () => _changeType(SlideDrawerExampleType.GRADIENT)),
-        MenuItem('Custom Header',
+        SliderItem('Custom Header',
             onTap: () => _changeType(SlideDrawerExampleType.HEAD_DRAWER)),
-        MenuItem('Custom Content',
+        SliderItem('Custom Content',
             onTap: () => _changeType(SlideDrawerExampleType.CONTENT_DRAWER)),
-        MenuItem('Header and Content',
+        SliderItem('Header and Content',
             onTap: () =>
                 _changeType(SlideDrawerExampleType.HEAD_CONTENT_DRAWER)),
-        MenuItem('Full Drawer',
+        SliderItem('Full Drawer',
             onTap: () => _changeType(SlideDrawerExampleType.FULL_DRAWER)),
       ];
 
-  List<MenuItem> get _itemsIcon => [
-        MenuItem('Basic',
+  List<SliderItem> get _itemsIcon => [
+        SliderItem('Basic',
             icon: Icons.rss_feed,
             onTap: () => _changeType(SlideDrawerExampleType.BASIC)),
-        MenuItem('Custom Background',
+        SliderItem('Custom Background',
             icon: Icons.favorite_border,
             onTap: () => _changeType(SlideDrawerExampleType.BACKGROUND)),
-        MenuItem('Custom Gradient',
+        SliderItem('Custom Gradient',
             icon: Icons.mail_outline,
             onTap: () => _changeType(SlideDrawerExampleType.GRADIENT)),
-        MenuItem('Custom Header',
+        SliderItem('Custom Header',
             icon: Icons.map,
             onTap: () => _changeType(SlideDrawerExampleType.HEAD_DRAWER)),
-        MenuItem('Custom Content',
+        SliderItem('Custom Content',
             icon: Icons.person_outline,
             onTap: () => _changeType(SlideDrawerExampleType.CONTENT_DRAWER)),
-        MenuItem('Header and Content',
+        SliderItem('Header and Content',
             icon: Icons.alarm,
             onTap: () =>
                 _changeType(SlideDrawerExampleType.HEAD_CONTENT_DRAWER)),
-        MenuItem('Full Drawer',
+        SliderItem('Full Drawer',
             icon: Icons.settings,
             onTap: () => _changeType(SlideDrawerExampleType.FULL_DRAWER)),
       ];
