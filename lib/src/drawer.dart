@@ -246,9 +246,12 @@ class _SlideDrawerState extends State<SlideDrawer>
                     if (isOpened)
                       GestureDetector(
                         child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.01),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                           width: MediaQuery.of(context).size.width,
                           height: MediaQuery.of(context).size.height,
-                          color: Colors.white.withOpacity(0.01),
                         ),
                         onTap: close,
                       ),
